@@ -8,7 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {},
+      backgroundImage: {
+        "hero-pattern": "url('/images/hero-pattern.png')",
+      },
+      maxWidth: { _1366: "1366px" },
+      spacing: {
+        _784: "784px",
+        _305: "305px",
+      },
     },
   },
   plugins: [],
