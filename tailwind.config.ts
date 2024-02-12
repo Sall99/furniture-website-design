@@ -11,7 +11,12 @@ const config: Config = {
       colors: {
         primary: {
           100: "var(--color-primary-100)",
+          200: "var(--color-primary-200)",
         },
+      },
+
+      borderRadius: {
+        _53: "53px",
       },
 
       fontSize: {
@@ -25,7 +30,9 @@ const config: Config = {
       spacing: {
         _108: "108px",
         _134: "134px",
+        _142: "142px",
         _156: "156px",
+        _182: "182px",
         _200: "200px",
         _305: "305px",
         _469: "469px",
