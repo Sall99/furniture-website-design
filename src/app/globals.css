@@ -3,10 +3,26 @@
 @tailwind utilities;
 
 :root {
+  --color-primary-100: rgba(246, 149, 72, 1);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.font-border {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+/* Featured */
+
+.featured-pricing {
+  font-size: 12px;
+  font-weight: 600;
+  top: 125px;
+  left: 30px;
 }
