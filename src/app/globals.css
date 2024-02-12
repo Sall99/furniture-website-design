@@ -4,6 +4,7 @@
 
 :root {
   --color-primary-100: rgba(246, 149, 72, 1);
+  --color-primary-200: rgba(235, 232, 232, 1);
 }
 
 @layer utilities {
@@ -19,10 +20,35 @@
 }
 
 /* Featured */
-
 .featured-pricing {
   font-size: 12px;
   font-weight: 600;
   top: 125px;
   left: 30px;
+}
+
+/* hero-card-text */
+.hero-card-text div {
+  padding: 0 100px;
+}
+
+.hero-card-text div:not(:first-child) {
+  border-left: 1px solid gray;
+}
+
+.hero-card-text div p {
+  width: 92px;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hero-card-text .text-top {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.hero-card-text .text-bottom {
+  font-weight: 400;
+  font-size: 17px;
 }

@@ -35,10 +35,17 @@ export default function Showcase() {
         </div>
 
         <div className="mt-32 w-_469 text-center text-white">
-          <div>
+          <div className="relative">
             <h2 className="font-semibold text-64 text-white font-border capitalize">
               Make a room comfortable & elegant
             </h2>
+            <Image
+              src="/images/Highlight.png"
+              alt="hero"
+              width={39}
+              height={43}
+              className="absolute -top-[15px] left-6"
+            />
           </div>
         </div>
 
