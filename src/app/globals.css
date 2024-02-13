@@ -5,6 +5,8 @@
 :root {
   --color-primary-100: rgba(246, 149, 72, 1);
   --color-primary-200: rgba(235, 232, 232, 1);
+  --color-primary-300: rgba(194, 104, 32, 1);
+  --color-secondary-100: rgba(110, 110, 110, 1);
 }
 
 @layer utilities {
@@ -51,4 +53,40 @@
 .hero-card-text .text-bottom {
   font-weight: 400;
   font-size: 17px;
+}
+
+.why-choosing-us {
+}
+
+.why-choosing-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.why-choosing-card {
+  width: 212px;
+  height: 212px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.why-choosing-card h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: white;
+  margin-top: 18px;
+}
+
+.why-choosing-card-round {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
