@@ -8,8 +8,8 @@ export default function Showcase() {
   return (
     <div className="h-_784 bg-hero-pattern bg-contain">
       <Header />
-      <div className="flex justify-between">
-        <div className="pl-_108 pr-_156 text-white font-bold mt-16">
+      <div className="flex">
+        <div className="pl-_108 text-white font-bold mt-16">
           <h2 className="text-2xl">Furniture</h2>
           <div className="w-_200 mt-8 flex flex-col items-center gap-8">
             <p className="text-xs flex flex-col gap-1">
@@ -34,7 +34,7 @@ export default function Showcase() {
           </div>
         </div>
 
-        <div className="mt-32 w-_469 text-center text-white">
+        <div className="mt-32 w-_469 text-center text-white ml-10">
           <div className="relative">
             <h2 className="font-semibold text-64 text-white font-border capitalize">
               Make a room comfortable & elegant
@@ -49,7 +49,7 @@ export default function Showcase() {
           </div>
         </div>
 
-        <div className="text-white mr-_156 mt-28">
+        <div className="text-white ml-56 mt-_88">
           <h2 className="text-2xl font-bold">Featured</h2>
           <div className="mt-7 flex flex-col gap-16">
             <div className="relative">
