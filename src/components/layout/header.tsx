@@ -22,7 +22,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="w-full text-right flex gap-16 pl-_305">
+    <header className="w-full text-right flex gap-16 pl-_108">
       {links.map(({ name, path }, key) => (
         <Link href={path} key={key} className="text-white text-lg mt-8">
           {name}
