@@ -56,7 +56,7 @@ export default function WhyChoosingUs() {
               free <br /> Delivery
             </h2>
           </div>
-          <div className="why-choosing-card bg-secondary-100">
+          <div className="why-choosing-card bg-secondary-100 relative">
             {" "}
             <div className="why-choosing-card-round">
               <Image
@@ -69,10 +69,17 @@ export default function WhyChoosingUs() {
             <h2>
               free <br /> installation
             </h2>
+            <Image
+              src="/images/ellipse-sm-1.png"
+              alt="hero"
+              width={61}
+              height={119}
+              className="absolute left-0 bottom-7"
+            />
           </div>
         </div>
         <div className="why-choosing-card-container mt-16">
-          <div className="why-choosing-card bg-secondary-100">
+          <div className="why-choosing-card bg-secondary-100 relative">
             {" "}
             <div className="why-choosing-card-round">
               <Image src="/images/ok.png" alt="hero" width={58} height={58} />
@@ -80,6 +87,13 @@ export default function WhyChoosingUs() {
             <h2>
               secure <br /> payment
             </h2>
+            <Image
+              src="/images/ellipse-sm-2.png"
+              alt="hero"
+              width={61}
+              height={119}
+              className="absolute right-0 bottom-7"
+            />
           </div>
           <div className="why-choosing-card bg-primary-300">
             {" "}
