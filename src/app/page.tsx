@@ -1,3 +1,4 @@
+import BestSellingProducts from "@/components/ui/best-selling-products";
 import ByRoom from "@/components/ui/by-room";
 import HeroCard from "@/components/ui/hero-card";
 import Showcase from "@/components/ui/showcase";
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroCard />
       <WhyChoosingUs />
       <ByRoom />
+      <BestSellingProducts />
     </main>
   );
 }
