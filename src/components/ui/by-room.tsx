@@ -6,7 +6,7 @@ export default function ByRoom() {
     <div className="mt-32">
       <div className="w-_480 m-auto text-center mb-_168">
         <h2 className="text-40 font-semibold mb-7">Shop by room</h2>
-        <p className="text-13">
+        <p className="text-13 capitalize">
           e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in.
           Tristique a tellus placerat ac eget. Enim nunc augue fringilla amet.
           Parturient ornare blandit fames auctor augue.
@@ -26,12 +26,12 @@ export default function ByRoom() {
               alt="by-shoop"
               width={452}
               height={218}
-              className="absolute top-7 left-7 -z-10"
+              className="absolute -top-7 left-7 -z-10"
             />
           </div>
           <div className="right-contain w-_448 relative">
             <h2 className="text-4xl font-semibold mb-7">Living Rom</h2>
-            <p className="text-13">
+            <p className="text-13 capitalize">
               e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis
               in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
               amet. Parturient ornare blandit fames auctor augue.
@@ -48,7 +48,7 @@ export default function ByRoom() {
         <div className="by-shop-card flex gap-20 justify-center items-center">
           <div className="left-contain w-_448">
             <h2 className="text-4xl font-semibold mb-7">Dinning room</h2>
-            <p className="text-13">
+            <p className="text-13 capitalize">
               e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis
               in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
               amet. Parturient ornare blandit fames auctor augue.
@@ -83,13 +83,13 @@ export default function ByRoom() {
               alt="by-shoop"
               width={452}
               height={218}
-              className="absolute top-7 left-7 -z-10"
+              className="absolute -top-7 left-7 -z-10"
             />
           </div>
           <div className="right-contain">
             <div className="right-contain w-_448">
               <h2 className="text-4xl font-semibold mb-7">Bedroom</h2>
-              <p className="text-13">
+              <p className="text-13 capitalize">
                 e. Ac consequat eget fusce nulla viverra. Nulla nibh massa
                 mattis in. Tristique a tellus placerat ac eget. Enim nunc augue
                 fringilla amet. Parturient ornare blandit fames auctor augue.

@@ -17,11 +17,13 @@ const config: Config = {
 
         secondary: {
           100: "var(--color-secondary-100)",
+          200: "var(--color-secondary-200)",
         },
       },
 
       borderRadius: {
         _53: "53px",
+        _50: "50%",
       },
 
       fontSize: {
@@ -44,12 +46,17 @@ const config: Config = {
         _182: "182px",
         _196: "196px",
         _200: "200px",
+        _246: "246px",
+        _250: "250px",
+        _269: "269px",
         _305: "305px",
+        _353: "353px",
         _448: "448px",
         _469: "469px",
         _480: "480px",
         _531: "531px",
         _784: "784px",
+        _1339: "1339px",
       },
     },
   },

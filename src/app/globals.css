@@ -7,6 +7,7 @@
   --color-primary-200: rgba(235, 232, 232, 1);
   --color-primary-300: rgba(194, 104, 32, 1);
   --color-secondary-100: rgba(110, 110, 110, 1);
+  --color-secondary-200: rgba(217, 217, 217, 1);
 }
 
 @layer utilities {
@@ -88,8 +89,6 @@
   justify-content: center;
 }
 
-.by-shop-card-container {
-}
-
-.by-shop-card {
+.slick-active .active-dot {
+  background-color: black;
 }
