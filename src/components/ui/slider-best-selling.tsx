@@ -52,7 +52,7 @@ const NextArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute right-[40%] -bottom-[105.5px]  z-10 arrow",
+        "w-8 h-8  absolute right-[39%] -bottom-[105.5px]  z-10 arrow",
         onClick !== null ? "arrow-active" : ""
       )}
       onClick={onClick}
@@ -66,7 +66,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute left-[40%] -bottom-[105.5px] arrow z-10",
+        "w-8 h-8  absolute left-[38%] -bottom-[105.5px] arrow z-10",
         onClick !== null ? "arrow-active" : ""
       )}
       onClick={onClick}
@@ -79,7 +79,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
 const settings = {
   customPaging: function (i: any) {
     return (
-      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20"></div>
+      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20  transition ease-in-out"></div>
     );
   },
   appendDots: (dots: any) => (
