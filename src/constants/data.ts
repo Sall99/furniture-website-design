@@ -216,3 +216,61 @@ export const products = [
     promoPrice: 220,
   },
 ];
+
+export const testmonialsData = [
+  {
+    user: {
+      id: 1,
+      name: "Josh Smith",
+      bio: "Manager of The New York Times",
+      image:
+        "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1708365174/furniture-website-design/Ellipse_202_fow82v.png",
+    },
+    description:
+      "They are have a perfect touch for make something so professional ,interest and useful for a lot of people",
+  },
+  {
+    user: {
+      id: 2,
+      name: "Josh Smith",
+      bio: "Manager of The New York Times",
+      image:
+        "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1708365174/furniture-website-design/Ellipse_202_fow82v.png",
+    },
+    description:
+      "They are have a perfect touch for make something so professional ,interest and useful for a lot of people",
+  },
+  {
+    user: {
+      id: 3,
+      name: "Josh Smith",
+      bio: "Manager of The New York Times",
+      image:
+        "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1708365174/furniture-website-design/Ellipse_202_fow82v.png",
+    },
+    description:
+      "They are have a perfect touch for make something so professional ,interest and useful for a lot of people",
+  },
+  {
+    user: {
+      id: 4,
+      name: "Josh Smith",
+      bio: "Manager of The New York Times",
+      image:
+        "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1708365174/furniture-website-design/Ellipse_202_fow82v.png",
+    },
+    description:
+      "They are have a perfect touch for make something so professional ,interest and useful for a lot of people",
+  },
+  {
+    user: {
+      id: 5,
+      name: "Josh Smith",
+      bio: "Manager of The New York Times",
+      image:
+        "https://res.cloudinary.com/dx6jhjxpt/image/upload/v1708365174/furniture-website-design/Ellipse_202_fow82v.png",
+    },
+    description:
+      "They are have a perfect touch for make something so professional ,interest and useful for a lot of people",
+  },
+];
