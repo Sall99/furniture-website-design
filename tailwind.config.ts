@@ -18,10 +18,12 @@ const config: Config = {
         secondary: {
           100: "var(--color-secondary-100)",
           200: "var(--color-secondary-200)",
+          300: "var(--color-secondary-300)",
         },
       },
 
       borderRadius: {
+        _15: "15px",
         _53: "53px",
         _50: "50%",
       },
@@ -52,6 +54,7 @@ const config: Config = {
         _269: "269px",
         _305: "305px",
         _353: "353px",
+        _400: "400px",
         _448: "448px",
         _469: "469px",
         _480: "480px",
