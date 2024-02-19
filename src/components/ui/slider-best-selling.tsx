@@ -79,7 +79,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
 const settings = {
   customPaging: function (i: any) {
     return (
-      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20  transition ease-in-out"></div>
+      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20  transition ease-in-out duration-300"></div>
     );
   },
   appendDots: (dots: any) => (

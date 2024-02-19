@@ -6,8 +6,10 @@
   --color-primary-100: rgba(246, 149, 72, 1);
   --color-primary-200: rgba(235, 232, 232, 1);
   --color-primary-300: rgba(194, 104, 32, 1);
+
   --color-secondary-100: rgba(110, 110, 110, 1);
   --color-secondary-200: rgba(217, 217, 217, 1);
+  --color-secondary-300: rgba(115, 115, 115, 1);
 }
 
 @layer utilities {
