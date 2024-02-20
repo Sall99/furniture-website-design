@@ -20,6 +20,7 @@ const config: Config = {
           200: "var(--color-secondary-200)",
           300: "var(--color-secondary-300)",
           400: "var(--color-secondary-400)",
+          500: "var(--color-secondary-500)",
         },
       },
 

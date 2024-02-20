@@ -3,6 +3,7 @@ import { Saira } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "@/components/layout/footer";
 
 const saira = Saira({ subsets: ["latin"] });
 
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={saira.className}>{children}</body>
+      <body className={saira.className}>
+        {children} <Footer />
+      </body>
     </html>
   );
 }
