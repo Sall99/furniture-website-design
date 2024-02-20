@@ -19,6 +19,7 @@ const config: Config = {
           100: "var(--color-secondary-100)",
           200: "var(--color-secondary-200)",
           300: "var(--color-secondary-300)",
+          400: "var(--color-secondary-400)",
         },
       },
 
@@ -36,9 +37,11 @@ const config: Config = {
 
       backgroundImage: {
         "hero-pattern": "url('/images/hero-pattern.png')",
+        "newstler-pattern": "url('/images/newstler.png')",
       },
       maxWidth: { _1366: "1366px" },
       spacing: {
+        _60: "60px",
         _88: "88px",
         _100: "100px",
         _108: "108px",
@@ -54,10 +57,12 @@ const config: Config = {
         _269: "269px",
         _305: "305px",
         _353: "353px",
+        _384: "384px",
         _400: "400px",
         _448: "448px",
         _469: "469px",
         _480: "480px",
+        _490: "490px",
         _531: "531px",
         _784: "784px",
         _1339: "1339px",

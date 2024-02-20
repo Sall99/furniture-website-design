@@ -7,7 +7,7 @@ interface ButtonProps {
   className?: string;
   onClick: () => void;
   type?: "button" | "submit" | "reset";
-  variant: "primary";
+  variant: "primary" | "secondary" | "default";
   size: "sm" | "md";
 }
 
@@ -19,8 +19,6 @@ export const Button: FC<ButtonProps> = ({
   variant = "default",
   size,
 }) => {
-  const buttonClasses = clsx();
-
   return (
     <button
       type={type}
@@ -28,6 +26,7 @@ export const Button: FC<ButtonProps> = ({
         "border-0 text-white rounded-xs text-xs focus:outline-none hover:cursor-pointer hover:opacity-90 transtion duration-200 ease-in-out py-2 px-4 rounded capitalize",
         className,
         variant === "primary" && "bg-primary-100",
+        variant === "secondary" && "bg-secondary-400",
         size === "sm" ? "w-_134 px-9 py-3" : ""
       )}
       onClick={onClick}
