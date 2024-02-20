@@ -7,3 +7,4 @@ export * from "./best-selling-products";
 export * from "./best-selling-products";
 export * from "./the-best-choice";
 export * from "./testmonials";
+export * from "./newstler";

@@ -10,6 +10,7 @@
   --color-secondary-100: rgba(110, 110, 110, 1);
   --color-secondary-200: rgba(217, 217, 217, 1);
   --color-secondary-300: rgba(115, 115, 115, 1);
+  --color-secondary-400: rgba(35, 38, 47, 1);
 }
 
 @layer utilities {
