@@ -116,3 +116,15 @@
 .arrow-active:hover {
   cursor: pointer;
 }
+
+@media (max-width: 1343px) {
+  .hero-card-text div {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-card-text .text-top {
+    font-size: 20px;
+  }
+}

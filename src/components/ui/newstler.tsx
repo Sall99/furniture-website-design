@@ -4,22 +4,22 @@ import { Button } from ".";
 
 export default function Newstler() {
   return (
-    <div className="bg-newstler-pattern w-full h-_490 bg-repeat-round bg-contain pt-_100 flex items-end pr-_100 flex-col">
+    <div className="flex h-_490 w-full flex-col items-end bg-newstler-pattern bg-cover px-12 pr-_100 pt-_100 lg:bg-contain lg:bg-repeat-round">
       <div className="flex flex-col items-start gap-10">
         <div>
-          <h2 className="text-white text-40 font-semibold mb-5">
+          <h2 className="mb-5 text-40 font-semibold text-white">
             Get more discount <br /> Off your order
           </h2>
-          <p className="text-xl text-white font-light">Join our mailing list</p>
+          <p className="text-xl font-light text-white">Join our mailing list</p>
         </div>
-        <form action="" className="flex gap-6">
+        <form action="" className="flex flex-col gap-6 md:flex-row">
           <div>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Your email address"
-              className="w-_384 h-_60 rounded-lg px-6 text-secondary-400 font-light"
+              className="h-_60 w-_384 rounded-lg px-6 font-light text-secondary-400"
             />
           </div>
           <Button

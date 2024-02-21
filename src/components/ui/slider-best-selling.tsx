@@ -24,7 +24,7 @@ interface ArrowProps {
 
 const Card: FC<Product> = ({ imageUrl, title, price, promoPrice }) => {
   return (
-    <div className="w-_246 h-_353">
+    <div className="w-_246 h-_353 m-auto">
       <div className=" border border-gray-500 rounded-2xl relative">
         <Image src={imageUrl} alt={title} width={246} height={250} />
         <div className="absolute bg-secondary-200 w-6 h-6 flex items-center justify-center rounded-_50 right-5 bottom-4 hover:cursor-pointer hover:scale-95 transition ease-in-out">
@@ -93,11 +93,31 @@ const settings = {
   rows: 2,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        slidesPerRow: 1,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesPerRow: 2,
+      },
+    },
+    {
+      breakpoint: 1343,
+      settings: {
+        slidesPerRow: 3,
+      },
+    },
+  ],
 };
 
 export function SliderBestSellingProducts({ products }: ProductsProps) {
   return (
-    <div className="slider-container w-_1339 m-auto px-24">
+    <div className="slider-container desktop:w-_1339 m-auto px-24">
       <Slider {...settings}>
         {products.map(({ imageUrl, id, title, price, promoPrice }, key) => (
           <div key={id}>

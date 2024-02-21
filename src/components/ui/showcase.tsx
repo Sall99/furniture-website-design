@@ -8,11 +8,11 @@ export default function Showcase() {
   return (
     <div className="h-_784 bg-hero-pattern bg-contain">
       <Header />
-      <div className="flex">
-        <div className="pl-_108 text-white font-bold mt-16">
+      <div className="flex flex-col px-12 lg:flex-row lg:px-0">
+        <div className="mt-16 font-bold text-white lg:pl-_108">
           <h2 className="text-2xl">Furniture</h2>
-          <div className="w-_200 mt-8 flex flex-col items-center gap-8">
-            <p className="text-xs flex flex-col gap-1">
+          <div className="mt-8 flex w-96 flex-col items-center gap-8 lg:w-_200">
+            <p className="flex flex-col gap-1 text-xs">
               <span>
                 Lorem ipsum dolor sit amet consectetur. At rhoncus etiam
                 convallis ullamcorper sit. Velit pretium vitae molestie viverra
@@ -34,9 +34,9 @@ export default function Showcase() {
           </div>
         </div>
 
-        <div className="mt-32 w-_469 text-center text-white ml-10">
+        <div className="mt-8 text-center text-white lg:ml-10 lg:mt-32 lg:w-_469">
           <div className="relative">
-            <h2 className="font-semibold text-64 text-white font-border capitalize">
+            <h2 className="font-border text-64 font-semibold capitalize text-white">
               Make a room comfortable & elegant
             </h2>
             <Image
@@ -49,7 +49,7 @@ export default function Showcase() {
           </div>
         </div>
 
-        <div className="text-white ml-56 mt-_88">
+        <div className="ml-56 mt-_88 hidden text-white desktop:block">
           <h2 className="text-2xl font-bold">Featured</h2>
           <div className="mt-7 flex flex-col gap-16">
             <div className="relative">
@@ -59,7 +59,7 @@ export default function Showcase() {
                 width={170}
                 height={166}
               />
-              <p className="absolute text-black flex flex-col featured-pricing capitalize">
+              <p className="featured-pricing absolute flex flex-col capitalize text-black">
                 <span>Blue sofa</span>
                 <span>$250</span>
               </p>
@@ -71,7 +71,7 @@ export default function Showcase() {
                 width={170}
                 height={166}
               />
-              <p className="absolute text-black flex flex-col featured-pricing capitalize">
+              <p className="featured-pricing absolute flex flex-col capitalize text-black">
                 <span>Orange chair</span>
                 <span>$250</span>
               </p>

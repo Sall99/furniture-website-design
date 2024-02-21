@@ -5,16 +5,16 @@ import { products } from "@/constants";
 
 export default function BestSellingProducts() {
   return (
-    <div className="mt-44">
-      <div className="w-_480 m-auto text-center mb-_168 relative">
+    <div className="mt-44 px-12">
+      <div className="relative m-auto mb-_168 text-center md:w-_480">
         <Image
           src="/images/star-thin.png"
           alt="by-shoop"
           width={110}
           height={110}
-          className="absolute -top-24 -left-40"
+          className="absolute -left-40 -top-24 hidden md:block"
         />
-        <h2 className="text-40 font-semibold mb-7 capitalize">
+        <h2 className="mb-7 text-40 font-semibold capitalize">
           best selling products
         </h2>
         <p className="text-13 capitalize">

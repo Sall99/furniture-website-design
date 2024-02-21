@@ -24,6 +24,11 @@ const config: Config = {
         },
       },
 
+      screens: {
+        desktop: "1343px",
+        xl: "1184px",
+      },
+
       borderRadius: {
         _15: "15px",
         _53: "53px",
@@ -56,6 +61,7 @@ const config: Config = {
         _246: "246px",
         _250: "250px",
         _269: "269px",
+        _300: "300px",
         _305: "305px",
         _353: "353px",
         _384: "384px",
@@ -64,6 +70,7 @@ const config: Config = {
         _469: "469px",
         _480: "480px",
         _490: "490px",
+        _500: "500px",
         _531: "531px",
         _784: "784px",
         _1339: "1339px",

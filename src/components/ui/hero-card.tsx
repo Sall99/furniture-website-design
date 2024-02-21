@@ -3,8 +3,8 @@ import React from "react";
 
 export default function HeroCard() {
   return (
-    <div className="px-32">
-      <div className="h-_182 bg-primary-200  rounded-_53 relative -top-11 overflow-hidden">
+    <div className="hidden px-12 md:block lg:px-32">
+      <div className="relative -top-11  h-_182 overflow-hidden rounded-_53 bg-primary-200">
         <Image
           src="/images/ellipse-1.png"
           alt="hero"
@@ -17,10 +17,10 @@ export default function HeroCard() {
           alt="hero"
           width={452}
           height={218}
-          className="absolute right-11 bottom-0"
+          className="absolute bottom-0 right-11"
         />
 
-        <div className="hero-card-text flex justify-center items-center pt-10">
+        <div className="hero-card-text flex items-center justify-center pt-10">
           <div>
             <p>
               <span className="text-top">7</span>
