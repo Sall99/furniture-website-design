@@ -28,17 +28,17 @@ const bottomLinks = [
 
 export default function Footer() {
   return (
-    <div className="w-full h-_384 bg-secondary-500 pt-_142 px-20">
-      <div className="flex justify-between mb-10">
-        <h2 className="text-white text-2xl font-bold">Furniture</h2>
-        <ul className="flex gap-8 items-center">
+    <div className="w-full bg-secondary-500 px-12 py-20 md:h-_384 md:pt-_142 lg:px-20">
+      <div className="mb-10 flex flex-col justify-between gap-9 lg:flex-row ">
+        <h2 className="text-2xl font-bold text-white">Furniture</h2>
+        <ul className="flex flex-wrap items-center gap-8">
           {links.map(({ name, path }, key) => (
             <li key={key} className="text-white">
               <Link href={path}>{name}</Link>
             </li>
           ))}
         </ul>
-        <ul className="flex gap-8 items-center">
+        <ul className="flex items-center gap-8">
           {socialLinks.map(({ Icon, path }, key) => (
             <li key={key} className="text-white">
               <Link href={path}>{Icon}</Link>
@@ -47,9 +47,9 @@ export default function Footer() {
         </ul>
       </div>
       <hr />
-      <div className="flex justify-center mt-10 text-13">
+      <div className="mt-10 flex flex-col justify-center gap-5 text-13 md:flex-row">
         <p className="text-white">&copy;2022, All rights reserved.</p>
-        <ul className="flex gap-8 items-center">
+        <ul className="flex flex-wrap items-center gap-8">
           {bottomLinks.map(({ name, path }, key) => (
             <li key={key} className="text-white">
               <Link href={path}>{name}</Link>

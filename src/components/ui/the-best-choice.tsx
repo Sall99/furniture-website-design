@@ -3,10 +3,10 @@ import React from "react";
 
 export default function TheBestChoice() {
   return (
-    <div className="mt-72 flex justify-center gap-_100">
+    <div className="mt-72 flex flex-col items-center justify-center gap-_100 xl:flex-row">
       <div className="flex flex-col gap-11">
         <div>
-          <h2 className="text-4xl font-semibold inline-flex flex-col mb-5">
+          <h2 className="mb-5 inline-flex flex-col text-4xl font-semibold">
             The Best Furniture <br /> Manufacturer of your choice
           </h2>
           <p className="w-_480">
@@ -27,7 +27,7 @@ export default function TheBestChoice() {
         </div>
       </div>
       <div>
-        <div className="relative">
+        <div className="relative w-_500">
           <Image
             src="/images/the-best-1.png"
             alt="hero"
@@ -46,15 +46,15 @@ export default function TheBestChoice() {
             alt="hero"
             width={92}
             height={92}
-            className="absolute left-0 -bottom-_100"
+            className="absolute -bottom-_100 left-0"
           />
 
-          <div className="absolute -top-10 right-5 bg-secondary-300 h-_200 w-_353 rounded-_15 -z-10" />
-          <div className="absolute bottom-14 -left-14 bg-primary-300 h-_200 w-_400 rounded-_15 -z-10" />
+          <div className="absolute -top-10 right-5 -z-10 h-_200 w-_353 rounded-_15 bg-secondary-300" />
+          <div className="absolute -left-14 bottom-14 -z-10 h-_200 w-_400 rounded-_15 bg-primary-300" />
         </div>
         <div className="mt-_100 text-center">
-          <h2 className="text-2xl font-semibold mb-5">Interior Design by us</h2>
-          <p className="text-13 w-_353 text-cente capitalize m-auto">
+          <h2 className="mb-5 text-2xl font-semibold">Interior Design by us</h2>
+          <p className="text-cente m-auto w-_353 text-13 capitalize">
             e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis
             in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
             amet. Parturient ornare blandit fames auctor augue.

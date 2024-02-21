@@ -23,11 +23,11 @@ export const Button: FC<ButtonProps> = ({
     <button
       type={type}
       className={clsx(
-        "border-0 text-white rounded-xs text-xs focus:outline-none hover:cursor-pointer hover:opacity-90 transtion duration-200 ease-in-out py-2 px-4 rounded capitalize",
+        "rounded-xs transtion rounded border-0 px-4 py-2 text-xs capitalize text-white duration-200 ease-in-out hover:cursor-pointer hover:opacity-90 focus:outline-none",
         className,
         variant === "primary" && "bg-primary-100",
         variant === "secondary" && "bg-secondary-400",
-        size === "sm" ? "w-_134 px-9 py-3" : ""
+        size === "sm" ? "w-_134 px-9 py-3" : "",
       )}
       onClick={onClick}
       aria-label={label}

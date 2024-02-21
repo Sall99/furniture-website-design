@@ -5,12 +5,12 @@ import Image from "next/image";
 
 export default function WhyChoosingUs() {
   return (
-    <div className="px-28 mt-40 flex gap-_196 items-center justify-center">
-      <div className="w-_448">
-        <h2 className="text-40 font-semibold inline-flex flex-col mb-5">
+    <div className="mt-20 flex flex-col items-center justify-center gap-8 px-12 md:mt-40 md:flex-row lg:gap-16 lg:px-28 desktop:gap-_196">
+      <div className="md:w-_448">
+        <h2 className="mb-5 inline-flex flex-col text-40 font-semibold">
           <span>Why choosing</span> <span className="text-center">us</span>
         </h2>
-        <p className="flex flex-col gap-4 text-13 mb-5">
+        <p className="mb-5 flex flex-col gap-4 text-13">
           <span>
             Lorem ipsum dolor sit amet consectetur. Molestie vel nisl justo
             vitae ridiculus malesuada id dapibus posuere. At in ac duis tortor
@@ -41,7 +41,7 @@ export default function WhyChoosingUs() {
           onClick={() => {}}
         />
       </div>
-      <div className="why-choosing-us  flex gap-9">
+      <div className="why-choosing-us  flex flex-col gap-9 md:flex-row">
         <div className="why-choosing-card-container">
           <div className="why-choosing-card bg-primary-300">
             <div className="why-choosing-card-round">
@@ -56,7 +56,7 @@ export default function WhyChoosingUs() {
               free <br /> Delivery
             </h2>
           </div>
-          <div className="why-choosing-card bg-secondary-100 relative">
+          <div className="why-choosing-card relative bg-secondary-100">
             {" "}
             <div className="why-choosing-card-round">
               <Image
@@ -74,12 +74,12 @@ export default function WhyChoosingUs() {
               alt="hero"
               width={61}
               height={119}
-              className="absolute left-0 bottom-7"
+              className="absolute bottom-7 left-0"
             />
           </div>
         </div>
         <div className="why-choosing-card-container mt-16">
-          <div className="why-choosing-card bg-secondary-100 relative">
+          <div className="why-choosing-card relative bg-secondary-100">
             {" "}
             <div className="why-choosing-card-round">
               <Image src="/images/ok.png" alt="hero" width={58} height={58} />
@@ -92,7 +92,7 @@ export default function WhyChoosingUs() {
               alt="hero"
               width={61}
               height={119}
-              className="absolute right-0 bottom-7"
+              className="absolute bottom-7 right-0"
             />
           </div>
           <div className="why-choosing-card bg-primary-300">

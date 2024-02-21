@@ -25,8 +25,8 @@ const NextArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute right-[80%] -bottom-[105.5px]  z-10 arrow",
-        onClick !== null ? "arrow-active" : ""
+        "arrow absolute  -bottom-[105.5px] right-[80%] z-10  h-8 w-8",
+        onClick !== null ? "arrow-active" : "",
       )}
       onClick={onClick}
     >
@@ -39,8 +39,8 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute left-[0%] -bottom-[105.5px] arrow z-10",
-        onClick !== null ? "arrow-active" : ""
+        "arrow absolute  -bottom-[105.5px] left-[0%] z-10 h-8 w-8",
+        onClick !== null ? "arrow-active" : "",
       )}
       onClick={onClick}
     >
@@ -52,7 +52,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
 const settings = {
   customPaging: function (i: any) {
     return (
-      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20  transition ease-in-out duration-300"></div>
+      <div className="active-dot mt-20 h-2 w-2 rounded-_50 border border-black  transition duration-300 ease-in-out"></div>
     );
   },
   appendDots: (dots: any) => (
@@ -67,12 +67,21 @@ const settings = {
   rows: 1,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
+
+  responsive: [
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+      },
+    },
+  ],
 };
 
 const Card: FC<CardProps> = ({ user, description }) => {
   return (
     <div>
-      <div className="flex gap-5 items-center mb-7">
+      <div className="mb-7 flex items-center gap-5">
         <Image src={user.image} alt={user.name} width={73} height={73} />
         <div>
           <p>{user.name}</p>
@@ -96,14 +105,14 @@ const SliderContainer = () => {
 
 export default function Testmonials() {
   return (
-    <div className="flex px-_100 mt-28 py-16 justify-center">
-      <div className="w-_531">
-        <h2 className="font-semibold text-3xl mb-8">
+    <div className="mb-24 mt-28 flex justify-center px-12 py-16 lg:px-_100 xl:mb-0">
+      <div className=" w-full  md:w-_531">
+        <h2 className="mb-8 text-3xl font-semibold">
           What people are saying about us
         </h2>
         <SliderContainer />
       </div>
-      <div>
+      <div className="hidden xl:block">
         <Image
           src="/images/testimonial.png"
           alt="testimonial"
