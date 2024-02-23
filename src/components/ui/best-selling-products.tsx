@@ -5,8 +5,8 @@ import { products } from "@/constants";
 
 export default function BestSellingProducts() {
   return (
-    <div className="mt-44 px-12">
-      <div className="relative m-auto mb-_168 text-center md:w-_480">
+    <div className="mt-20 px-12 md:mt-44">
+      <div className="relative m-auto mb-20 md:mb-_168 md:w-_480 md:text-center">
         <Image
           src="/images/star-thin.png"
           alt="by-shoop"

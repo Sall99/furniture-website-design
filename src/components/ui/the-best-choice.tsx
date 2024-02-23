@@ -3,13 +3,13 @@ import React from "react";
 
 export default function TheBestChoice() {
   return (
-    <div className="mt-72 flex flex-col items-center justify-center gap-_100 xl:flex-row">
+    <div className="mt-20 flex flex-col items-center justify-center gap-_100 px-12 lg:mt-72 xl:flex-row">
       <div className="flex flex-col gap-11">
         <div>
           <h2 className="mb-5 inline-flex flex-col text-4xl font-semibold">
             The Best Furniture <br /> Manufacturer of your choice
           </h2>
-          <p className="w-_480">
+          <p className="md:w-_480">
             Furnitre power is a software as services for multiperpose business
             management system, expecially for them who are running two or more
             business exploree the future Furnitre power is a software as
@@ -27,7 +27,7 @@ export default function TheBestChoice() {
         </div>
       </div>
       <div>
-        <div className="relative w-_500">
+        <div className="relative md:w-_500">
           <Image
             src="/images/the-best-1.png"
             alt="hero"
@@ -49,8 +49,8 @@ export default function TheBestChoice() {
             className="absolute -bottom-_100 left-0"
           />
 
-          <div className="absolute -top-10 right-5 -z-10 h-_200 w-_353 rounded-_15 bg-secondary-300" />
-          <div className="absolute -left-14 bottom-14 -z-10 h-_200 w-_400 rounded-_15 bg-primary-300" />
+          <div className="absolute -top-10 right-5 -z-10 hidden h-_200 w-_353 rounded-_15 bg-secondary-300 md:block" />
+          <div className="absolute -left-14 bottom-14 -z-10 hidden h-_200 w-_400 rounded-_15 bg-primary-300 md:block" />
         </div>
         <div className="mt-_100 text-center">
           <h2 className="mb-5 text-2xl font-semibold">Interior Design by us</h2>
