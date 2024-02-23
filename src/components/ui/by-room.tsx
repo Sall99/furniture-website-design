@@ -4,7 +4,7 @@ import React from "react";
 export default function ByRoom() {
   return (
     <div className="mt-32 px-12">
-      <div className="m-auto mb-_168 text-center md:w-_480">
+      <div className="m-auto mb-20 md:mb-_168 md:w-_480 md:text-center">
         <h2 className="mb-7 text-40 font-semibold">Shop by room</h2>
         <p className="text-13 capitalize">
           e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis in.

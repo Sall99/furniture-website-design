@@ -4,10 +4,10 @@ import { Button } from ".";
 
 export default function Newstler() {
   return (
-    <div className="flex h-_490 w-full flex-col items-end bg-newstler-pattern bg-cover px-12 pr-_100 pt-_100 lg:bg-contain lg:bg-repeat-round">
+    <div className="flex h-_490 w-full flex-col bg-newstler-pattern bg-cover px-12 pt-_100 md:items-end md:pr-_100 lg:bg-contain lg:bg-repeat-round">
       <div className="flex flex-col items-start gap-10">
         <div>
-          <h2 className="mb-5 text-40 font-semibold text-white">
+          <h2 className="mb-5 text-3xl font-semibold text-white md:text-40">
             Get more discount <br /> Off your order
           </h2>
           <p className="text-xl font-light text-white">Join our mailing list</p>
@@ -19,7 +19,7 @@ export default function Newstler() {
               name="email"
               id="email"
               placeholder="Your email address"
-              className="h-_60 w-_384 rounded-lg px-6 font-light text-secondary-400"
+              className="h-11 w-80 rounded-lg px-6 font-light text-secondary-400 md:h-_60 md:w-64"
             />
           </div>
           <Button

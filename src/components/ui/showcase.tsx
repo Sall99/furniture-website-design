@@ -11,7 +11,7 @@ export default function Showcase() {
       <div className="flex flex-col px-12 lg:flex-row lg:px-0">
         <div className="mt-16 font-bold text-white lg:pl-_108">
           <h2 className="text-2xl">Furniture</h2>
-          <div className="mt-8 flex w-96 flex-col items-center gap-8 lg:w-_200">
+          <div className="mt-8 flex flex-col items-center gap-8 md:w-96 lg:w-_200">
             <p className="flex flex-col gap-1 text-xs">
               <span>
                 Lorem ipsum dolor sit amet consectetur. At rhoncus etiam
@@ -34,9 +34,9 @@ export default function Showcase() {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-white lg:ml-10 lg:mt-32 lg:w-_469">
+        <div className="mt-28 text-center text-white md:mt-8 lg:ml-10 lg:mt-32 lg:w-_469">
           <div className="relative">
-            <h2 className="font-border text-64 font-semibold capitalize text-white">
+            <h2 className="font-border text-5xl font-semibold capitalize leading-tight text-white md:text-64 md:leading-normal">
               Make a room comfortable & elegant
             </h2>
             <Image

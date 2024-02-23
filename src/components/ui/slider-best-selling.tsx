@@ -24,10 +24,10 @@ interface ArrowProps {
 
 const Card: FC<Product> = ({ imageUrl, title, price, promoPrice }) => {
   return (
-    <div className="w-_246 h-_353 m-auto">
-      <div className=" border border-gray-500 rounded-2xl relative">
+    <div className="m-auto h-_353 w-_246">
+      <div className=" relative rounded-2xl border border-gray-500">
         <Image src={imageUrl} alt={title} width={246} height={250} />
-        <div className="absolute bg-secondary-200 w-6 h-6 flex items-center justify-center rounded-_50 right-5 bottom-4 hover:cursor-pointer hover:scale-95 transition ease-in-out">
+        <div className="absolute bottom-4 right-5 flex h-6 w-6 items-center justify-center rounded-_50 bg-secondary-200 transition ease-in-out hover:scale-95 hover:cursor-pointer">
           <Image
             src="/images/plus.png"
             alt="plus signe"
@@ -37,10 +37,10 @@ const Card: FC<Product> = ({ imageUrl, title, price, promoPrice }) => {
         </div>
       </div>
       <div className="mt-5">
-        <h2 className="font-semibold text-base text-primary-100">{title}</h2>
+        <h2 className="text-base font-semibold text-primary-100">{title}</h2>
         <p className="text-primary-100">
-          <span className="text-13 mr-4">${promoPrice}</span>
-          <span className="text-xs opacity-45 line-through">${price}</span>
+          <span className="mr-4 text-13">${promoPrice}</span>
+          <span className="text-xs line-through opacity-45">${price}</span>
         </p>
       </div>
     </div>
@@ -51,8 +51,8 @@ const NextArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute right-[39%] -bottom-[105.5px]  z-10 arrow",
-        onClick !== null ? "arrow-active" : ""
+        "arrow absolute  -bottom-[105.5px] right-[39%] z-10  h-8 w-8",
+        onClick !== null ? "arrow-active" : "",
       )}
       onClick={onClick}
     >
@@ -65,8 +65,8 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
   return (
     <div
       className={clsx(
-        "w-8 h-8  absolute left-[38%] -bottom-[105.5px] arrow z-10",
-        onClick !== null ? "arrow-active" : ""
+        "arrow absolute  -bottom-[105.5px] left-[38%] z-10 h-8 w-8",
+        onClick !== null ? "arrow-active" : "",
       )}
       onClick={onClick}
     >
@@ -78,7 +78,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => {
 const settings = {
   customPaging: function (i: any) {
     return (
-      <div className="border border-black w-2 h-2 rounded-_50 active-dot mt-20  transition ease-in-out duration-300"></div>
+      <div className="active-dot mt-20 h-2 w-2 rounded-_50 border border-black  transition duration-300 ease-in-out"></div>
     );
   },
   appendDots: (dots: any) => (
@@ -95,21 +95,32 @@ const settings = {
   prevArrow: <PrevArrow />,
   responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 1343,
       settings: {
-        slidesPerRow: 1,
+        slidesPerRow: 3,
+      },
+    },
+    {
+      breakpoint: 1184,
+      settings: {
+        arrows: false,
+        slidesPerRow: 3,
       },
     },
     {
       breakpoint: 1024,
       settings: {
         slidesPerRow: 2,
+        arrows: false,
+        dots: false,
       },
     },
     {
-      breakpoint: 1343,
+      breakpoint: 767,
       settings: {
-        slidesPerRow: 3,
+        arrows: false,
+        slidesPerRow: 1,
+        dots: false,
       },
     },
   ],
@@ -117,7 +128,7 @@ const settings = {
 
 export function SliderBestSellingProducts({ products }: ProductsProps) {
   return (
-    <div className="slider-container desktop:w-_1339 m-auto px-24">
+    <div className="slider-container m-auto xl:px-24 desktop:w-_1339">
       <Slider {...settings}>
         {products.map(({ imageUrl, id, title, price, promoPrice }, key) => (
           <div key={id}>
