@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 
 const links = [
   {
@@ -8,15 +8,15 @@ const links = [
   },
   {
     name: "About",
-    path: "/about",
+    path: "/",
   },
   {
     name: "Features",
-    path: "/features",
+    path: "/",
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "/",
   },
 ];
 
