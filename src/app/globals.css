@@ -13,6 +13,9 @@
   --color-secondary-400: rgba(35, 38, 47, 1);
   --color-secondary-500: rgba(0, 0, 0, 0.69);
 }
+body {
+  overflow-x: hidden;
+}
 
 @layer utilities {
   .text-balance {
